@@ -244,6 +244,46 @@ body.light-parchment .calloutpill span{
   background:#e1f3f1;
   color:#0c6b68;
 }
+body.light-parchment .visualnotice,
+body.light-parchment .supportnotice{
+  background:#e6f4f2!important;
+  color:#173242!important;
+  border-color:#0f8a86!important;
+}
+body.light-parchment .viewbar #openscope,
+body.light-parchment .viewbar #codeview{
+  background:#e6dccb!important;
+  color:#172333!important;
+  border-color:#c4b399!important;
+}
+body.light-parchment .tools{
+  background:#fbf6ecee!important;
+  border-color:#cbbba2!important;
+}
+body.light-parchment .tools button{
+  color:#1e2f42!important;
+}
+body.light-parchment .anglebar{
+  background:#fbf6ecf2!important;
+  border-color:#cbbba2!important;
+}
+body.light-parchment .anglebar button,
+body.light-parchment .anglebar label{
+  color:#1e2f42!important;
+}
+body.light-parchment .detailhero{
+  background:radial-gradient(ellipse,#fffdf9,#e8dcc8 75%)!important;
+  border:1px solid #d6c7b2;
+}
+body.light-parchment .partthumb{
+  background:radial-gradient(ellipse,#fffdf9,#e8dcc8 75%)!important;
+  border-color:#d6c7b2!important;
+}
+body.light-parchment #feedback{
+  background:#f0e6d5!important;
+  color:#1e2f42!important;
+  border-color:#d3c3ab!important;
+}
 
 @media(max-width:950px){
   .dmmgrid,.encgrid,.robotgrid{grid-template-columns:1fr}
