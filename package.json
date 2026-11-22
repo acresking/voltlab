@@ -1,0 +1,15 @@
+{
+  "name": "voltlab",
+  "version": "0.4.0",
+  "private": true,
+  "description": "Hebrew interactive electronics teaching lab and CAD reference viewer",
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "test": "node tests/teaching-engine.test.cjs",
+    "build:cad": "esbuild src/cad-viewer.js --bundle --minify --format=esm --outfile=dist/cad-viewer.js"
+  },
+  "devDependencies": {
+    "esbuild": "0.28.2",
+    "three": "0.187.0"
+  }
+}
