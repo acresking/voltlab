@@ -2,16 +2,14 @@
 
 Reference URLs reviewed: https://benchtwin.com/ and https://learn-arduino-red.vercel.app/he/ . Public screens informed the workflow; no proprietary source, branding, lesson text or model catalog was copied. Lesson content and implementation are original to VoltLab. Existing third-party CAD and SVG licenses remain in dist/licenses.
 
-| Area | Implemented | Remaining |
+| Area | Implemented | Notes |
 | --- | --- | --- |
-| Workspace | Build, wire, code, measurement, learning modes; camera presets; grid; fit; duplicate; undo/redo | Arbitrary panel splitting, object transforms and true mechanical layout |
-| Circuit | One ideal DC loop, LED/resistor/switch/LDR/motor approximations, checks | General network solver, analog transients, device failures |
-| Code | Restricted Arduino teaching interpreter with variables, expressions, if/else, map, constrain, GPIO, serial | CPU emulation, full compiler, libraries, Python and Java execution |
-| Inputs | Abstract digital and normalized analog sensor inputs | Device-specific ADC, I2C, SPI, OneWire, echo timing |
-| Catalog | 102 lab/reference entries; 48 front illustrations; 6,189 separately browsable CAD paths | Verified model and pinout for every board revision, 9,357 electrically simulated parts |
-| Learning | 16 original Hebrew units; objectives, explanation, pins, guided setup, quiz, verified supported tasks, local progress | Coverage of all protocols and robot platforms |
-| Instruments | Live sampled voltage/current, GPIO transitions, freeze, CSV | Full analog oscilloscope and physical multimeter probes |
-| Export | JSON with sketch/title, Arduino/Python source export, BOM CSV, wire CSV, logical SVG diagram | KiCad PCB export, model assembly GLB/STL export |
-| Storage | Named projects, ten local saves, JSON exchange, 30 undo states | Account-based cloud collaboration |
-| CAD | True upstream CAD viewing with WebGL/software fallback | Solid modeling, sketch extrusion, Boolean cuts, manufacturable auto-enclosures |
-| Robotics | Not implemented | Dynamics, collision, robot APIs, autonomous control and competition fields |
+| Workspace & UI | Build, wire, code, measurement, enclosure CAD, robotics arena, learning modes; Dual theme (BenchTwin Pro Dark & Learn-Arduino Warm Parchment `#f6eddd`); left icon navigation rail & floating drawers; 4-view Blender/BenchTwin split preview; camera presets; WASD/QE navigation; grid; fit; duplicate; 30-step undo/redo | Responsive desktop & mobile layouts |
+| Circuit & Safety | Ideal DC & GPIO loop solver, LED color Vf models, resistor/switch/LDR/motor approximations, live floating SVG schematic overlay, wire HIGH/LOW badges, Safety Mode toggle with realistic overcurrent burnout (>20mA) and smoke effects | Educational circuit model |
+| Code Engine | Extended Arduino C++ interpreter (`setup`/`loop`, variables, expressions, `if/else if/else`, `for` loops, `#include`/`#define`, `pinMode`, `digitalWrite`, `analogWrite`, `analogRead`, `digitalRead`, `map`, `constrain`, `tone`/`noTone` with WebAudio synth, `pulseIn`, `Servo.h`, `LCD`/`OLED` display, `DHT`/`BME`/`MPU` reads, Serial Monitor compile/upload sequence, inline clickable parameter chips) + live MicroPython/Python execution (`Pin`, `LED`, `PWM`, `ADC`, `sleep`, `print`) | Runs safely in browser without eval |
+| Interactive Inspector | Floating 3D component callout pills, 9 Arduino Uno onboard component hotspots, interactive Component Inspector dialog with 5 LED color swatches, ON/OFF timing sliders synced directly to `delay()`, resistor presets, and zoom-to-part | Inspired by Learn-Arduino |
+| Catalog | 102 lab/reference entries; 48 front illustrations; 6,189 separately browsable KiCad 3D VRML CAD paths | Dynamic resistor color bands & live LCD/Servo canvas overlays |
+| Learning | 16 structured Hebrew lessons with 5 tabs (`סקירה`, `פריסת פינים`, `דוגמה`, `מפרט`, `תרגול`), 3-column pinout tables, line-by-line code walkthroughs, hardware specs, automated lab verification, quizzes, and progress persistence | Supports hash routing (`#blink`, `#servo`, etc.) and 21 language selector UI |
+| Instruments | Dual-channel live oscilloscope (freeze + CSV), Digital Multimeter (V, mA, Ω, mW, Continuity), and Logic Analyzer / Pin Timeline (GPIO, PWM, TONE, SERVO events) | Real-time sampled data |
+| Enclosure CAD & Export | Context-aware 3D Enclosure Designer around circuit dimensions (M2–M5 standoffs, USB cutouts, vents, lid) with ASCII STL export, plus BOM/Shopping List CSV (parts, screws, libraries), Wiring CSV, JSON project, and SVG schematic | 3D-printable STL generation |
+| Robotics Arena | 2WD Autonomous Robotics & Competition Arena simulator with live ultrasonic raycasting, obstacle avoidance, target collection, and motor/servo telemetry | Supports interactive obstacle placement |

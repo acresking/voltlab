@@ -16,3 +16,242 @@
 @media(max-width:700px){header{min-height:67px;height:auto}.projectbar{padding:14px}.projectbar h1{font-size:19px}.projectbar #renameproject{position:static;font-size:11px;padding:2px 0;margin-top:5px}.workspacebar{margin:0 10px 12px;display:block;padding:6px}.workflowtabs{overflow:auto;gap:3px;padding-bottom:5px}.workflowtabs button{font-size:13px;white-space:nowrap;padding:9px 13px;min-height:42px}.historycontrols{border-top:1px solid #2d4455;overflow:auto;padding-top:6px;gap:6px}.historycontrols button{font-size:11px;white-space:nowrap;min-height:34px;padding:6px 10px}.stage,body[data-workspace=learn] .stage{height:440px}.anglebar{bottom:46px;right:9px;left:52px;gap:1px;flex-wrap:wrap;padding:4px}.anglebar>span{display:none}.anglebar button{font-size:10px;padding:6px}.anglebar label{font-size:11px}.anglebar #fitview{display:none}.tools{left:7px;top:60px;gap:3px;padding:4px}.tools button{height:32px;width:30px}.stagenote{font-size:9px;bottom:13px!important}.benchchecks p{font-size:12px}.benchchecks b{font-size:13px}.benchchecks button{min-height:32px}.coursepanel{position:relative;top:auto;max-height:none;padding:16px}body[data-workspace=learn] main{display:flex;flex-direction:column}body[data-workspace=learn] .coursepanel{order:-1;width:100%}body[data-workspace=learn][data-mobile=workspace] .workspace{display:block}body[data-workspace=learn][data-mobile=library] .coursepanel,body[data-workspace=learn][data-mobile=inspector] .coursepanel{display:none}body[data-workspace=learn][data-mobile=library] main>.library{display:block}body[data-workspace=learn][data-mobile=inspector] main>.inspector{display:block}.courseheading h2{font-size:20px}.courseheading .eyebrow{font-size:11px}.lessonmeta span{font-size:12px}.coursetitle{font-size:24px}.coursetabs button{font-size:14px;min-height:44px}.lessonintro,#coursecontent>p{font-size:15px}.lessonwhy p{font-size:14px}.lessonwhy b{font-size:14px}#coursecontent h3{font-size:16px}#coursecontent ul,.lessonsteps{font-size:14px}.quizanswers button{font-size:14px;min-height:46px}.checkpoint p,.quizfeedback{font-size:14px}.coursebottom button{font-size:13px;min-height:44px}.coursebottom .run{font-size:13px}.coursepins span{font-size:12px}.coursepins b{font-size:14px}.lessonstrip{margin:12px 10px 0;padding:12px}.stripheading{gap:8px;flex-wrap:wrap}.stripheading span{font-size:12px}.stripheading button{font-size:12px;min-height:36px}.lessonrail button{min-width:180px}.lessonrail b{font-size:14px}.lessonrail small,.lessonrail span{font-size:12px}}
 .lessoncontrols label{display:block;border:1px solid #385669;border-radius:8px;padding:12px;background:#172f3d;color:#abcbd5;font-size:13px;margin-top:12px}.lessoncontrols b{float:left;font:14px monospace;color:#98f0cf}.lessoncontrols input{width:100%;display:block;margin-top:14px;accent-color:#7eddbb;min-height:30px}
 @media(max-width:700px){.workflowtabs,.historycontrols{scrollbar-width:none}.workflowtabs::-webkit-scrollbar,.historycontrols::-webkit-scrollbar{display:none}}
+
+/* BenchTwin Pro Dark & Learn-Arduino Warm Parchment Light Theme + New Suites */
+body{padding-left:64px;transition:background .25s,color .25s}
+.siderail{position:fixed;left:0;top:0;bottom:0;width:62px;background:#0e1722f5;border-right:1px solid #283a4d;display:flex;flex-direction:column;align-items:center;padding:12px 4px;gap:6px;z-index:45;backdrop-filter:blur(12px)}
+.siderail button{width:52px;padding:7px 2px;border:1px solid transparent;background:transparent;display:flex;flex-direction:column;align-items:center;gap:3px;border-radius:9px;color:#93abc2;font-size:10px}
+.siderail button span{font-size:17px;line-height:1}
+.siderail button small{font-size:9px;white-space:nowrap}
+.siderail button:hover,.siderail button.active{background:#1b333a;border-color:#3d7468;color:var(--mint)}
+.siderail .langbadge{font:bold 11px monospace;background:#1d3247;color:#8ef4d0;padding:3px 6px;border-radius:5px;border:1px solid #3c5c78}
+.floatingdrawer{position:fixed;left:68px;top:72px;bottom:20px;width:min(360px,86vw);background:#131f2df8;border:1px solid #355068;border-radius:13px;z-index:50;padding:16px;overflow:auto;box-shadow:0 24px 80px #000b;backdrop-filter:blur(16px)}
+.drawerhead{display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid #293e52;padding-bottom:10px;margin-bottom:12px}
+.drawerhead h3{margin:0;font-size:16px;color:var(--mint)}
+.drawernote{font-size:12px;color:#9ab2c8;margin:0 0 10px;line-height:1.6}
+.drawerlist{display:flex;flex-direction:column;gap:7px}
+.draweritem{display:flex;align-items:flex-start;gap:10px;text-align:right;width:100%;padding:10px;background:#19293a;border:1px solid #2c435a;border-radius:9px}
+.draweritem.active{border-color:var(--mint);background:#1f3b3b}
+.draweritem .badge{width:26px;height:26px;border-radius:50%;background:#101c28;color:var(--mint);display:grid;place-items:center;font:bold 11px monospace;flex-shrink:0}
+.draweritem strong{display:block;font-size:13px}
+.draweritem small{display:block;font-size:11px;color:#8ba5bd;margin-top:2px}
+.draweritem p{font-size:11px;color:#a9c1d6;margin:5px 0 0;line-height:1.5}
+.drawersettings{display:flex;flex-direction:column;gap:9px}
+.settingtoggle{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:9px 11px;background:#182736;border:1px solid #2b4054;border-radius:8px;font-size:12px;cursor:pointer}
+.settingtoggle input{accent-color:var(--mint);width:17px;height:17px}
+.langgrid{display:grid;grid-template-columns:1fr 1fr;gap:7px}
+.langbtn{display:flex;align-items:center;gap:8px;padding:8px 10px;text-align:right;background:#182838}
+.langbtn b{font:bold 11px monospace;color:var(--mint);background:#101b27;padding:3px 6px;border-radius:4px}
+.langbtn span{font-size:11px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+
+/* Header Progress & Clock */
+.headerprogress{display:flex;align-items:center;gap:14px;background:#152331;border:1px solid #2c4358;padding:6px 12px;border-radius:9px}
+.headerprogress .clockcol{display:flex;flex-direction:column;text-align:left;direction:ltr}
+.headerprogress #liveclock{font:bold 12px monospace;color:var(--mint)}
+.headerprogress #liveunit{font-size:10px;color:#8da6be;max-width:170px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;direction:rtl}
+.headerprogress .progcol{min-width:115px}
+.headerprogress .progtop{display:flex;justify-content:space-between;font-size:11px;margin-bottom:4px}
+.headerprogress .progtop b{font-family:monospace;color:var(--mint)}
+.headerprogress .progbar{height:6px;background:#0d1620;border-radius:4px;overflow:hidden}
+.headerprogress .progbar i{display:block;height:100%;background:linear-gradient(90deg,#1f9d8b,var(--mint));transition:width .3s}
+
+/* Floating Live SVG Schematic Overlay */
+.liveschematic{position:absolute;top:14px;left:58px;width:min(340px,62vw);background:#12202ee8;border:1px solid #355269;border-radius:10px;padding:8px 10px;backdrop-filter:blur(8px);z-index:12;color:#dbe9f6;box-shadow:0 12px 30px #0006}
+.schemhead{display:flex;align-items:center;justify-content:space-between;font-size:11px;color:#93b3ca;margin-bottom:4px}
+.schemhead button{padding:1px 6px;font-size:11px;background:transparent;border:0}
+#liveschematicsvg svg{width:100%;height:auto;display:block}
+.schemflow{animation:dashflow .7s linear infinite}
+@keyframes dashflow{to{stroke-dashoffset:-20}}
+
+/* 3D Floating Callout Hotspots & Wire State Pills */
+.stagecallouts{position:absolute;inset:0;pointer-events:none;overflow:hidden;z-index:10}
+.calloutpill{position:absolute;transform:translate(-50%,-135%);pointer-events:auto;display:inline-flex;align-items:center;gap:6px;padding:4px 9px;background:#11202fe6;border:1px solid #3c657c;border-radius:18px;font-size:11px;color:#e6f2ff;box-shadow:0 4px 14px #0007;white-space:nowrap}
+.calloutpill i{width:7px;height:7px;border-radius:50%;background:var(--mint);display:inline-block}
+.calloutpill span{font:10px monospace;color:#99e9cd;background:#19353a;padding:1px 5px;border-radius:10px}
+.calloutpill.burned{border-color:#ff534d;background:#3a1820ee;color:#ffd4d0}
+.calloutpill.boardspot{border-color:#569cd6;background:#13263ae8}
+.calloutpill.boardspot small{display:none}
+.wirebadge{position:absolute;transform:translate(-50%,-50%);padding:2px 6px;border-radius:5px;font:bold 9px monospace;pointer-events:none;box-shadow:0 2px 8px #0008}
+.wirebadge.high{background:#ff534d;color:#fff}
+.wirebadge.low{background:#263648;color:#b8c7d9;border:1px solid #445b73}
+
+/* Interactive Component Inspector Popover (Learn-Arduino style) */
+.partpopover{position:absolute;top:56px;right:16px;width:min(315px,88vw);background:#152434f7;border:1px solid #436982;border-radius:12px;padding:14px;z-index:18;box-shadow:0 20px 60px #000b;backdrop-filter:blur(12px)}
+.pophead{display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid #2b4257;padding-bottom:8px;margin-bottom:8px}
+.pophead strong{font-size:15px;color:var(--mint)}
+.pophead button{padding:2px 7px;background:transparent;border:0}
+.popdesc{font-size:12px;color:#a9bfd4;line-height:1.65;margin:0 0 10px}
+.popsection{margin:10px 0;font-size:12px}
+.popsection label{display:flex;justify-content:space-between;margin-bottom:6px;color:#c5d8e8}
+.popsection input[type=range]{width:100%;accent-color:var(--mint)}
+.colorswatches{display:flex;gap:10px;justify-content:flex-start;padding:4px 0}
+.swatch{width:28px;height:28px;border-radius:50%;border:2px solid #fff6;padding:0}
+.swatch.active{transform:scale(1.16);border-color:#fff;box-shadow:0 0 12px #fff9}
+.presetchips{display:flex;flex-wrap:wrap;gap:6px}
+.presetchips button{font:11px monospace;padding:5px 8px}
+.popfeedback{padding:8px 10px;border-radius:7px;background:#193534;color:#9df2d2;font-size:12px;margin:8px 0}
+.popfeedback.danger{background:#3d1d24;color:#ffb3ad;border:1px solid #ff6b6b}
+
+/* Inline Code Parameter Bar */
+.inlineparams{display:flex;align-items:center;gap:7px;flex-wrap:wrap;padding:8px 14px;background:#12202f;border-top:1px solid #283b4e;font-size:11px;color:#95b0c7}
+.inlineparams button{font:11px monospace;padding:4px 9px;background:#1b333a;border-color:#3a6e63;color:#9ef5d4}
+
+/* Multimeter & Logic Analyzer Timeline */
+.multimeterpanel{border-top:1px solid #2f465a;padding:16px;background:#101b27}
+.dmmgrid{display:grid;grid-template-columns:280px 1fr;gap:16px}
+.dmmcard,.timelinecard{background:#162433;border:1px solid #2d4459;border-radius:10px;padding:14px}
+.dmmhead{display:flex;align-items:center;justify-content:space-between;margin-bottom:10px}
+.dmmhead h3{margin:3px 0 0;font-size:14px}
+.dmmscreen{background:#0b1815;border:2px solid #2f574d;border-radius:8px;padding:12px 14px;display:flex;align-items:baseline;justify-content:space-between;margin-bottom:10px;box-shadow:inset 0 3px 10px #000a}
+.dmmscreen span{font:bold 10px monospace;color:#62b59c}
+.dmmscreen strong{font:bold 26px monospace;color:#74f7c6}
+.dmmmodes{display:grid;grid-template-columns:repeat(3,1fr);gap:5px}
+.dmmmodes button{font-size:11px;padding:6px 4px}
+.timelinebars{display:flex;flex-direction:column;gap:7px;max-height:165px;overflow:auto}
+.timelinenote{font-size:12px;color:#89a3bc;margin:18px 0;text-align:center;direction:rtl}
+.trow{display:grid;grid-template-columns:58px 1fr 64px;align-items:center;gap:8px;font:11px monospace}
+.tpin{color:#9CC2DF;font-weight:700}
+.ttrack{height:24px;background:#0c141e;border:1px solid #263a4d;border-radius:5px;display:flex;align-items:flex-end;gap:2px;padding:2px 4px;overflow:hidden}
+.ttrack i{flex:1;min-width:4px;background:#3a5068;border-radius:2px 2px 0 0}
+.ttrack i.high{background:var(--mint)}
+.tval{text-align:right;color:var(--mint)}
+
+/* Enclosure CAD & Robotics Arena Panels */
+.enclosurepanel,.roboticspanel{border-top:1px solid #30495e;padding:18px;background:linear-gradient(155deg,#152434,#0e1824)}
+.enchead{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:16px}
+.enchead>div{margin-left:auto}
+.enchead h2{font-size:18px;margin-top:4px}
+.encgrid,.robotgrid{display:grid;grid-template-columns:300px 1fr;gap:18px;align-items:start}
+.enccontrols,.robottelemetry{background:#162636;border:1px solid #2d465c;border-radius:10px;padding:14px;display:flex;flex-direction:column;gap:9px}
+.enccontrols label{display:flex;justify-content:space-between;align-items:center;font-size:12px;color:#b5cae0;gap:8px}
+.enccontrols input[type=number],.enccontrols select{width:140px;background:#0e1925;border:1px solid #38536a;color:var(--mint);padding:6px 8px;border-radius:6px}
+.encpreview,.robotarena{background:#0b1520;border:1px solid #314b63;border-radius:10px;padding:12px;text-align:center}
+.encpreview canvas,.robotarena canvas{width:100%;max-width:580px;height:auto;border-radius:7px;margin:auto}
+.encstats{margin-top:10px;font-size:12px;color:#9fc0d6}
+
+/* Academy 4-Tab Tables & Walkthroughs */
+.pinouttablewrap{overflow-x:auto;margin:10px 0}
+.pinouttable{width:100%;border-collapse:collapse;font-size:12px}
+.pinouttable th,.pinouttable td{padding:8px 7px;border-bottom:1px solid #2e4559;text-align:right;vertical-align:top;line-height:1.55}
+.pinouttable th{color:var(--mint);background:#152836}
+.pinouttable code{background:#101e2b;color:#97f2d0;padding:2px 5px;border-radius:4px;font-size:11px}
+.codewalkthrough{display:flex;flex-direction:column;gap:9px;margin:12px 0}
+.walkcard{background:#162938;border:1px solid #314d63;border-radius:8px;padding:10px 12px}
+.walkcard code{display:block;font:bold 12px monospace;color:#95f3d1;margin-bottom:5px}
+.walkcard p{margin:0;font-size:12px;color:#bdd1e0;line-height:1.7}
+.spectable{display:flex;flex-direction:column;gap:4px}
+.specrow{display:flex;justify-content:space-between;padding:8px 10px;background:#162836;border-radius:6px;font-size:12px}
+.specrow span{color:#9ab4c9}
+.specrow b{color:#e2effa;font-family:monospace}
+.overviewactions{display:flex;flex-direction:column;gap:6px;margin-top:14px}
+.stripnav{margin-right:auto;display:flex;gap:6px}
+.lessoncard{position:relative;padding-top:18px!important}
+.lessoncard .lessoncheck{position:absolute;top:8px;left:10px;width:22px;height:22px;border-radius:50%;background:#152534;border:1px solid #3c5970;display:grid;place-items:center;font:bold 10px monospace;color:#9bc0d9}
+.lessoncard.done .lessoncheck{background:#1f6f61;border-color:#78e8c4;color:#fff}
+
+/* Learn-Arduino Warm Parchment Light Theme (#f6eddd) */
+body.light-parchment{
+  --bg:#f6eddd;
+  --panel:#fbf6ec;
+  --line:#d8ccb8;
+  --muted:#5c6672;
+  --text:#172333;
+  --mint:#0f8a86;
+  background:radial-gradient(ellipse at 50% 0,#fffaf0 0,#f6eddd 65%,#efe3ce 100%);
+  color:#172333;
+}
+body.light-parchment header,
+body.light-parchment .siderail,
+body.light-parchment .workspacebar,
+body.light-parchment .panel,
+body.light-parchment .workspace,
+body.light-parchment .coursepanel,
+body.light-parchment .lessonstrip,
+body.light-parchment .floatingdrawer,
+body.light-parchment .partpopover,
+body.light-parchment .liveschematic,
+body.light-parchment .multimeterpanel,
+body.light-parchment .scopepanel,
+body.light-parchment .enclosurepanel,
+body.light-parchment .roboticspanel,
+body.light-parchment .benchchecks,
+body.light-parchment dialog{
+  background:#fbf6ecf5!important;
+  color:#172333!important;
+  border-color:#d6c7b2!important;
+  box-shadow:0 6px 24px #45352014;
+}
+body.light-parchment .stage{
+  background:radial-gradient(ellipse at 50% 45%,#fdf9f0,#efe3ce 82%)!important;
+}
+body.light-parchment button{
+  background:#efe5d4;
+  color:#172333;
+  border-color:#cbbba2;
+}
+body.light-parchment button:hover{
+  border-color:#0f8a86;
+  background:#e2f2ef;
+}
+body.light-parchment button.active,
+body.light-parchment .run{
+  background:#0f8a86!important;
+  color:#ffffff!important;
+  border-color:#0c6e6b!important;
+}
+body.light-parchment .comp,
+body.light-parchment .dmmcard,
+body.light-parchment .timelinecard,
+body.light-parchment .enccontrols,
+body.light-parchment .robottelemetry,
+body.light-parchment .walkcard,
+body.light-parchment .specrow,
+body.light-parchment .lessonwhy,
+body.light-parchment .checkpoint,
+body.light-parchment .draweritem,
+body.light-parchment .settingtoggle,
+body.light-parchment .headerprogress,
+body.light-parchment .search,
+body.light-parchment select,
+body.light-parchment .lessonrail button{
+  background:#f3eadb!important;
+  color:#172333!important;
+  border-color:#d5c6af!important;
+}
+body.light-parchment .search input,
+body.light-parchment .detailbody p,
+body.light-parchment .lessonintro,
+body.light-parchment #coursecontent>p,
+body.light-parchment #coursecontent h3,
+body.light-parchment #coursecontent ul,
+body.light-parchment .lessonsteps,
+body.light-parchment .walkcard p,
+body.light-parchment .popdesc{
+  color:#243447!important;
+}
+body.light-parchment .walkcard code,
+body.light-parchment .pinouttable code,
+body.light-parchment .specrow b{
+  color:#0c6b68!important;
+  background:#e3f3f1!important;
+}
+body.light-parchment .calloutpill{
+  background:#fffdf9f0;
+  color:#172333;
+  border-color:#0f8a86;
+}
+body.light-parchment .calloutpill span{
+  background:#e1f3f1;
+  color:#0c6b68;
+}
+
+@media(max-width:950px){
+  .dmmgrid,.encgrid,.robotgrid{grid-template-columns:1fr}
+  .liveschematic{width:250px}
+}
+@media(max-width:700px){
+  body{padding-left:0}
+  .siderail{display:none}
+  .floatingdrawer{left:10px;right:10px;width:auto;top:64px}
+  .liveschematic{top:46px;left:8px;width:225px;padding:6px}
+}

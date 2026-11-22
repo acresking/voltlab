@@ -1,6 +1,6 @@
 {
   "name": "voltlab",
-  "version": "0.4.0",
+  "version": "1.0.0",
   "private": true,
   "description": "Hebrew interactive electronics teaching lab and CAD reference viewer",
   "engines": { "node": ">=20" },
